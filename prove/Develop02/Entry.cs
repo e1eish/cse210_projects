@@ -14,7 +14,7 @@ public class Entry {
     {
         Console.WriteLine(_prompt);
         Console.Write("Please enter your response: ");
-        _response = Console.ReadLine();
+        _response = Console.ReadLine() ?? String.Empty;
         _responseLength = _response.Count();
     }
 
